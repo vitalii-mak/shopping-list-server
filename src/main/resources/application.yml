@@ -1,1 +1,10 @@
-
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shopping-list?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: appUser
+    password: qwerty
+  jpa:
+    hibernate:
+      ddl-auto: update
