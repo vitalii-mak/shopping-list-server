@@ -23,6 +23,7 @@ dependencies {
   implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
   implementation 'org.springframework.boot:spring-boot-starter-security'
   implementation 'org.springframework.boot:spring-boot-starter-web'
+  runtimeOnly 'com.h2database:h2'
   compileOnly 'org.projectlombok:lombok'
   developmentOnly 'org.springframework.boot:spring-boot-devtools'
   runtimeOnly 'org.postgresql:postgresql'
@@ -31,6 +32,7 @@ dependencies {
     exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
   }
   testImplementation 'org.springframework.security:spring-security-test'
+  compile group: 'jakarta.validation', name: 'jakarta.validation-api', version: '2.0.2'
 }
 
 test {
